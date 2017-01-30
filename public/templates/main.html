@@ -1,0 +1,28 @@
+<div class="box-actions">
+    <p class="intro">Digite os nós no campo abaixo e selecione a opção desejada:</p>
+    <input type="text" id="nodeX" class="nodes" ng-model="main.nodeX" />
+    <input type="text" id="nodeY" class="nodes" ng-model="main.nodeY" />
+    <br>
+    <button class="default-button node-action" id="button-add" ng-click="main.addCollision(main.nodeX, main.nodeY)">Adicionar colisão</button>
+    <br>
+    <button class="default-button node-action" id="button-add" ng-click="main.searchCollision(main.nodeX, main.nodeY)">Buscar colisão</button>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-6">
+        <h2>Status</h2>
+        <ul class="status">
+            <li ng-repeat="message in main.status track by $index">{{ message }}</li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <h2>Colisões detectadas</h2>
+        <ul class="collision-networks">
+            <li class="collision-networks__item" ng-repeat="network in main.networks">{{ network }}</li>
+        </ul>
+    </div>
+</div>
+<br>
+<br>

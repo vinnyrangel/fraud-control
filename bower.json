@@ -1,0 +1,28 @@
+{
+  "name": "fraudsystem",
+  "version": "1.0.0",
+  "devDependencies": {
+    "angular": "1.5.8",    
+    "angular-ui-router": "0.3.1",    
+    "bootstrap": "3.3.6",
+    "jquery": "2.2.4",
+    "ngstorage": "0.3.10",
+    "node-sass": "3.8.0",    
+    "angular-sanitize": "1.5.8",    
+    "angular-mocks": "1.5.8"    
+  },
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "1.5.8"    
+  }
+}
